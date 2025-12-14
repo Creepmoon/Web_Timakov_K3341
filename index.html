@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,13 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Первая лабораторная работа</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href=".">Первая лабораторная работа</a>
                 <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -30,29 +34,20 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Главная</a>
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Главная</a>
                             </li>
-                            <li class="navitem">
-                                <a href="Task1" class="nav-link">Первое задание</a>
+                            <li class="nav-item">
+                                <a href="Task1" class="nav-link">Первая лабораторная работа</a>
                             </li>
-                            <li class="navitem">
-                                <a href="Task2" class="nav-link">Второе задание</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Task3" class="nav-link">Третье задание</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Task4" class="nav-link">Четвертое задание</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Task5" class="nav-link">Пятое задание</a>
+                            <li class="nav-item">
+                                <a href="Task2" class="nav-link">Вторая лабораторная работа</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-md-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -63,64 +58,28 @@
 
         <div class="container">
             <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
             <span class="fa fa-angle-down"></span>
         </button>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
+            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">Главное</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">Первое задание</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">Главное</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">Требования:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Первая лабораторная работа</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">Второе задание</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">Требования:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">Третье задание</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">Требования</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_8" class="nav-link">Четвертое задание</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_9" class="nav-link">Требования:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">Реализация:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">Пятое задание</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_12" class="nav-link">Сервер должен:</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Вторая лабораторная работа</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -134,79 +93,11 @@
 <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
 <p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
 <h2 id="_1">Главное</h2>
-<p>В Данной лабораторной работе мы изучаем работу с Socket в языке Python. В Работе мы использовали как UDP-сокеты, так TCP-сокеты.
-Также изучили и написали простые клиент-серверные приложения.</p>
-<p>Разбор самих заданий:</p>
-<h2 id="_2">Первое задание</h2>
-<p>Реализовать клиентскую и серверную часть приложения. Клиент отправляет серверу сообщение «Hello, server», и оно должно отобразиться на стороне сервера. В ответ сервер отправляет клиенту сообщение «Hello, client», которое должно отобразиться у клиента.</p>
-<hr />
-<h2 id="_3">Требования:</h2>
-<ul>
-<li>
-<p>Обязательно использовать библиотеку socket. </p>
-</li>
-<li>
-<p>Реализовать с помощью протокола UDP.</p>
-</li>
-</ul>
-<hr />
-<p><a href="Task1/">Описание выполнения Первого пункта работы</a></p>
-<h2 id="_4">Второе задание</h2>
-<p>Реализовать клиентскую и серверную часть приложения. Клиент запрашивает выполнение математической операции, параметры которой вводятся с клавиатуры. Сервер обрабатывает данные и возвращает результат клиенту.</p>
-<p>Варианты операций:</p>
-<p>Теорема Пифагора.
-Решение квадратного уравнения.
-Поиск площади трапеции.
-Поиск площади параллелограмма.
-Порядок выбора варианта: Выбирается по порядковому номеру в журнале (пятый студент получает вариант 1 и т.д.).</p>
-<hr />
-<h2 id="_5">Требования:</h2>
-<ul>
-<li>
-<p>Обязательно использовать библиотеку socket.</p>
-</li>
-<li>
-<p>Реализовать с помощью протокола TCP.</p>
-</li>
-</ul>
-<hr />
-<p><a href="Task2/">Описание выполнения второго пункта работы</a></p>
-<h2 id="_6">Третье задание</h2>
-<p>Реализовать серверную часть приложения. Клиент подключается к серверу, и в ответ получает HTTP-сообщение, содержащее HTML-страницу, которая сервер подгружает из файла index.html.</p>
-<hr />
-<h2 id="_7">Требования</h2>
-<ul>
-<li>Обязательно использовать библиотеку socket.</li>
-</ul>
-<hr />
-<p><a href="Task3/">Описание выполения третьего пункта работы</a></p>
-<h2 id="_8">Четвертое задание</h2>
-<p>Реализовать двухпользовательский или многопользовательский чат. Для максимального количества баллов реализуйте многопользовательский чат.</p>
-<hr />
-<h2 id="_9">Требования:</h2>
-<ul>
-<li>Обязательно использовать библиотеку socket.</li>
-<li>Для многопользовательского чата необходимо использовать библиотеку threading.</li>
-</ul>
-<hr />
-<h2 id="_10">Реализация:</h2>
-<ul>
-<li>Протокол TCP: 100% баллов.</li>
-<li>Протокол UDP: 80% баллов.</li>
-<li>Для UDP используйте threading для получения сообщений на клиенте.</li>
-<li>Для TCP запустите клиентские подключения и обработку сообщений от всех пользователей в потоках. Не забудьте сохранять пользователей, чтобы отправлять им сообщения.</li>
-</ul>
-<p><a href="Task4/">Описание выполения четвертого пункта работы</a></p>
-<h2 id="_11">Пятое задание</h2>
-<p>Написать простой веб-сервер для обработки GET и POST HTTP-запросов с помощью библиотеки socket в Python.</p>
-<hr />
-<h2 id="_12">Сервер должен:</h2>
-<ul>
-<li>Принять и записать информацию о дисциплине и оценке по дисциплине.</li>
-<li>Отдать информацию обо всех оценках по дисциплинам в виде HTML-страницы.</li>
-</ul>
-<hr />
-<p><a href="Task5/">Описание выполения пятого пункта работы</a></p></div>
+<p>Здесь выполняются лабораторные работы по Web-Разработке</p>
+<h2 id="_2">Первая лабораторная работа</h2>
+<p><a href="Task1/">Описание выполнения Первой лабораторной работы</a></p>
+<h2 id="_3">Вторая лабораторная работа</h2>
+<p><a href="Task2/">Описание выполнения Второй лабораторной работы</a></p></div>
             </div>
         </div>
 
@@ -214,8 +105,7 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
@@ -228,7 +118,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>From here you can search these documents. Enter your search terms below.</p>
@@ -248,7 +138,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -288,6 +178,6 @@
 </html>
 
 <!--
-MkDocs version : 1.5.3
-Build Date UTC : 2025-09-30 20:11:47.931374+00:00
+MkDocs version : 1.6.1
+Build Date UTC : 2025-12-14 01:27:50.158700+00:00
 -->
