@@ -1,14 +1,11 @@
-site_name: Первая лабораторная работа
+site_name: отчеты к лабораторным работам
 site_author: Тимаков Егор K3341
-site_url: localhost:9090
+site_url: http://localhost:9090
 
 nav:
-  -Главная: index.md
-  -Первое задание: Task1
-  -Второе задание: Task2
-  -Третье задание: Task3
-  -Четвертое задание: Task4
-  -Пятое задание: Task5
+  - Главная: index.md
+  - Первая лабораторная работа: Task1
+  - Вторая лабораторная работа: Task2
 
 theme:
-  name: material
+  name: mkdocs
