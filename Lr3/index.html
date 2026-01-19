@@ -144,19 +144,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Навигация по документации</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#api" class="nav-link">Структура API</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_5" class="nav-link">Быстрый старт</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Быстрый старт</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Формат ответов</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Формат ответов</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Пагинация</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Пагинация</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -190,8 +194,20 @@
 </code></pre>
 <h2 id="_3">Аутентификация</h2>
 <p>Все API endpoints требуют аутентификации через токены. Подробнее в разделе <a href="authentication/">Аутентификация</a>.</p>
+<h2 id="_4">Навигация по документации</h2>
+<ul>
+<li><strong>Модели данных</strong>: <a href="models/">models.md</a></li>
+<li><strong>Аутентификация (токены, регистрация, вход)</strong>: <a href="authentication/">authentication.md</a></li>
+<li><strong>Endpoints</strong>:</li>
+<li><a href="endpoints/employees/">Сотрудники</a></li>
+<li><a href="endpoints/authors/">Авторы</a></li>
+<li><a href="endpoints/books/">Книги</a></li>
+<li><a href="endpoints/financial/">Финансы</a></li>
+<li><a href="endpoints/reports/">Отчёты</a></li>
+<li><strong>Примеры запросов (curl / Python / JS)</strong>: <a href="examples/">examples.md</a></li>
+</ul>
 <h2 id="api">Структура API</h2>
-<h3 id="_4">Основные разделы:</h3>
+<h3 id="_5">Основные разделы:</h3>
 <ol>
 <li><strong>Аутентификация</strong> (<code>/api/auth/</code>) - регистрация, вход, управление токенами</li>
 <li><strong>Сотрудники</strong> (<code>/api/employees/</code>) - управление данными сотрудников</li>
@@ -200,7 +216,7 @@
 <li><strong>Финансы</strong> (<code>/api/financial/</code>) - финансовые записи</li>
 <li><strong>Отчёты</strong> (<code>/api/reports/</code>) - создание и просмотр отчётов</li>
 </ol>
-<h2 id="_5">Быстрый старт</h2>
+<h2 id="_6">Быстрый старт</h2>
 <ol>
 <li>Установите зависимости:</li>
 </ol>
@@ -226,9 +242,9 @@
 </ol>
 <pre><code class="language-bash">mkdocs serve
 </code></pre>
-<h2 id="_6">Формат ответов</h2>
+<h2 id="_7">Формат ответов</h2>
 <p>Все ответы API возвращаются в формате JSON. При ошибках возвращается соответствующий HTTP статус код и описание ошибки.</p>
-<h2 id="_7">Пагинация</h2>
+<h2 id="_8">Пагинация</h2>
 <p>Списки объектов возвращаются с пагинацией (по 20 элементов на страницу по умолчанию).</p></div>
             </div>
         </div>
